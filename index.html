@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moeda</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Conversor de Moedas</h1>
+
+        <Form class="converter-forma" id="converterForma">
+            <div class="currency-row">
+                <div class="currency-input">
+                    <label for="quantidade">Valor</label>
+                    <input type="numero" id="quantidade" placeholder="Digite o valor" step="0.1" min="0" required>
+
+                    <div class="currency-select">
+                        <label for="fromCurrency">De</label>
+                        <select id="fromCurrency" required>
+                            <option value="USD">USD - Dólar</option>
+                            <option value="EUR">EUR - Euro</option>
+                            <option value="BRL" selected>BRL - Real </option>
+                            <option value="GBP">GBP - libra</option>
+                            <option value="JPY">JPY - Iene</option>
+                            <option value="CAD">CAD - Dólar Canadense</option>
+                            <option value="AUD">AUD - Dólar Australiano</option>
+                            <option value="CHF">CHF - Franco Suíço</option>
+                            <option value="CNY">CNY - Yuan</option>
+                            <option value="ARS">ARS - Peso Argentino</option>
+                        </select>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </Form>
+    </div>
+        
+</body>
+</html>
