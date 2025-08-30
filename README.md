@@ -1,21 +1,48 @@
 💱 Conversor de Moedas
 
-Este é um projeto simples desenvolvido com HTML, CSS e JavaScript que permite converter valores entre diferentes moedas.
+Um simples e prático conversor de moedas em tempo real, feito com HTML, CSS e JavaScript.
+O projeto utiliza a ExchangeRate API para buscar as taxas de câmbio mais recentes.
 
-O objetivo é praticar conceitos básicos de desenvolvimento web, como manipulação do DOM, estilização com CSS e uso de JavaScript para cálculos e interatividade.
+🚀 Funcionalidades
 
-✨ Funcionalidades
+✅ Converter valores entre diferentes moedas.
+✅ Exibir a taxa de câmbio utilizada.
+✅ Interface simples e intuitiva.
+✅ Mensagem de erro amigável caso a API falhe.
+✅ Indicador de carregamento durante a busca da taxa.
 
-* Conversão entre moedas escolhidas pelo usuário.
+🛠️ Tecnologias Utilizadas
 
-* Interface simples e responsiva.
+HTML5 → Estrutura da aplicação
 
-* Atualização dinâmica do valor convertido.
+CSS3 → Estilização e layout
 
-🚀 Tecnologias usadas
+JavaScript (ES6+) → Lógica de conversão
 
-- HTML5
+ExchangeRate API → Fonte das taxas de câmbio
 
-- CSS3
+📂 Estrutura do Projeto
+/conversor-moedas
+│── index.html      # Estrutura principal
+│── style.css       # Estilização
+│── script.js       # Lógica do conversor
 
-- JavaScript
+▶️ Como Usar
+
+Clone este repositório:
+
+git clone https://github.com/seu-usuario/conversor-moedas.git
+
+
+Abra o arquivo index.html no navegador.
+
+Preencha o valor, selecione as moedas e clique em Converter.
+
+🌍 Exemplo de Conversão
+💵 100 USD = 92.30 EUR
+📈 Taxa: 1 USD = 0.9230 EUR
+
+🧑‍💻 Autor
+
+Desenvolvido por João Giácomo
+🚀

@@ -12,6 +12,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 20px; 
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 .container {
@@ -22,6 +23,7 @@ body {
     width: 100%;
     max-width: 500px;
     text-align: center;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 h1 {
@@ -59,6 +61,7 @@ input, select {
     border-radius: 12px;
     font-size: 16px;
     transition: all 0.3s ease;
+    color: #333;
 }
 
 input:focus, select:focus {
@@ -75,6 +78,7 @@ label {
     color: #555;
     font-weight: 600;
     text-align: left;
+    transition: color 0.3s ease;
 }
 
 .converter-btn {
@@ -118,11 +122,12 @@ label {
 .info {
     margin-top: 30px;
     font-size: 14px;
-    color: #666;
+    color: #444; /* contraste melhorado */
+    transition: color 0.3s ease;
 }
 
 .result {
-    background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%);
+    background: linear-gradient(45deg, #686d9c 0%, #8314c3 100%);
     padding: 20px;
     margin-top: 30px;
     color: #fff;
@@ -130,16 +135,57 @@ label {
     font-weight: 600;
     border-radius: 12px;
     display: none;
-
 }
 
-
 .error {
-    background: linear-gradient(45deg, #ff6b6b, #ee5466)
-    color(#fff);
+    background: linear-gradient(45deg, #ff0707, #ee5466);
+    color: #fff;
     padding: 15px;
     border-radius: 15px;
     margin-top: 20px;
     display: none;
+}
 
+/* Responsividade */
+@media (max-width: 480px) {
+    .currency-row {
+        flex-direction: column;
+    }
+}
+
+/* ================== DARK MODE ================== */
+body.dark-mode {
+    background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+    color: #eee;
+}
+
+body.dark-mode .container {
+    background: #1e1e1e;
+    color: #eee;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+body.dark-mode h1 {
+    color: #fff;
+}
+
+body.dark-mode input,
+body.dark-mode select {
+    background: #2c2c2c;
+    border: 2px solid #444;
+    color: #fff;
+}
+
+body.dark-mode input:focus,
+body.dark-mode select:focus {
+    border-color: #764ba2;
+    background: #333;
+}
+
+body.dark-mode label {
+    color: #ddd;
+}
+
+body.dark-mode .info {
+    color: #bbb;
 }

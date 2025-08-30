@@ -11,6 +11,11 @@
     <div class="container">
         <h1>Conversor de Moedas</h1>
 
+        <!-- Botão Dark/Light Mode -->
+        <button type="button" class="converter-btn" onclick="document.body.classList.toggle('dark-mode')">
+            🌙 / ☀️
+        </button>
+
         <form class="converter-form" id="converterForm">
 
             <!-- Linha 1: Valor + Moeda de origem -->
@@ -25,7 +30,7 @@
                     <select id="fromCurrency" required>
                         <option value="USD">USD - Dólar</option>
                         <option value="EUR">EUR - Euro</option>
-                        <option value="BRL" selected>BRL - Real </option>
+                        <option value="BRL" selected>BRL - Real</option>
                         <option value="GBP">GBP - Libra</option>
                         <option value="JPY">JPY - Iene</option>
                         <option value="CAD">CAD - Dólar Canadense</option>
@@ -49,7 +54,7 @@
                     <select id="toCurrency" required>
                         <option value="USD" selected>USD - Dólar</option>
                         <option value="EUR">EUR - Euro</option>
-                        <option value="BRL">BRL - Real </option>
+                        <option value="BRL">BRL - Real</option>
                         <option value="GBP">GBP - Libra</option>
                         <option value="JPY">JPY - Iene</option>
                         <option value="CAD">CAD - Dólar Canadense</option>
@@ -61,24 +66,28 @@
                 </div>
             </div>
 
+            <!-- Botão de converter -->
             <button type="submit" class="converter-btn" id="converterBtn">
                 💰 Converter Moeda
             </button>
         </form>
         
+        <!-- Loader -->
         <div class="loading">
             <div class="spinner"></div>
-            <p>Buscando cotação...</p>
+            <span>Buscando cotação...</span>
         </div>
         
+        <!-- Resultado e Erro -->
         <div class="result"></div>
         <div class="error"></div>
 
+        <!-- Informações -->
         <div class="info"> 
             <p>💡 Taxas atualizadas em tempo real</p>
         </div>
     </div>
 
-<script src="scripts.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
