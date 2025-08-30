@@ -29,11 +29,6 @@ ExchangeRate API → Fonte das taxas de câmbio
 
 ▶️ Como Usar
 
-Clone este repositório:
-
-git clone https://github.com/seu-usuario/conversor-moedas.git
-
-
 Abra o arquivo index.html no navegador.
 
 Preencha o valor, selecione as moedas e clique em Converter.
